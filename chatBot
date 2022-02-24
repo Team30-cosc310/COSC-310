@@ -1,0 +1,122 @@
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+class Bot extends JFrame{
+	private JTextArea area = new JTextArea(); //Chat Area
+	private JTextField field = new JTextField();//Chat Field
+	private JButton button = new JButton();// The Button
+	private JLabel label = new JLabel();// A label for the button (i.e., "return")
+		
+	Bot(){
+		JFrame frame = new JFrame();
+		frame.setSize(500,500); //SCREEN SIZE
+		frame.setResizable(false); 
+		frame.setLayout(null);
+		frame.setVisible(true);
+		frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
+		frame.getContentPane();
+		
+		frame.setTitle("Team 30 - A COSC310 Virtual Assistant"); //Title
+
+		//Adding the different methods - area, field, button, label
+		frame.add(area);
+		frame.add(field);
+		frame.add(button);
+		
+		//AREA SETTINGS
+		area.setSize(500,420); //SIZE
+		area.setLocation(0,0); //LOCATION
+		area.setBackground(Color.black); //BACKGROUND COLOR
+		
+		//FIELD SETTTINGS
+		field.setSize(401,20);
+		field.setLocation(1,420);
+		//BUTTON SETTINGS
+		button.setSize(500,60); //SIZE
+		button.setLocation(400,420); //LOCATION
+		
+		//LABEL SETTING
+		label.setText("RETURN"); //TEXT
+		label.setAlignmentY(button.getAlignmentY()-2);
+		button.add(label); //Assigning the Label to the Bottom 
+
+		//Adding Action Listener for the Button
+		button.addActionListener((ActionListener) new ActionListener(){
+			public void actionPerformed(ActionEvent e) {
+				
+				//Getting text from user once BUTTON is pressed
+				if(e.getSource()==button) {
+					area.setForeground(Color.WHITE); //TEXT COLOR
+					String userText = field.getText().toLowerCase();
+					area.append("You: " + userText + "\n");
+					field.setText("");
+					
+					//Checking the entered user message
+					if(userText.contains("hi")||userText.contains("hey")||userText.contains("hello")
+							||userText.contains("howdy")||userText.contains("greetings")){
+						reply("Hello! I am Team 30's Virtual Assistant"+"\n" + 
+							"Chatbot: How can I help you today?"); //Opening REPLY
+					}
+					else if(userText.contains("forgot") && userText.contains("password")) {
+						select();
+						reply("Please input an option from the suggestions below" + "\n" + "- Reset Password"+
+								"\n"+"- Send Activiation Link"+
+								"\n"+"- Speak to Representative"); //Forgot Password replies
+					}
+					else if(userText.contains("exit") || userText.contains("done")) { //keywords that program will terminate with ('done' , 'exit')
+						reply("Sounds good! The program will now shut down. Feel free to restart at any time!");
+						System.exit(10);  //To close the program
+					}
+					else if(userText.contains("send activation link")) { //Activation Link
+						email();
+					}
+					else if(userText.contains("@")) {
+						reply("I just sent out the email! Please check your INBOX and SPAM folder");
+					}
+					else if(userText.contains("speak") || userText.contains("representative")) { //speak to representative 
+						reply("Sounds good! Let me see what your estimated wait time is");
+						reply("Your estimated wait time is about 8 min! Would you like to proceed?");
+						reply("If yes, please reply with the keyword ORANGE");
+					}
+					else if(userText.contains("orange")) {
+							reply("Sounds good, please input your phone number in the following format: "
+									+"\n"+  "(XXX) XXX-XXXX "+"\n"+"and the next avaialable agent will get back to you"
+									+ "as soon as possible!");
+						}
+					
+					
+//					else if(userText.contains("Good"))
+					else 
+						reply("Sorry, I had trouble understanding you there. " + "\n" + "Chatbot: Try rephrasing.");//INAVLID INPUT
+				}
+				
+			}
+			
+		}); //CLOSING BRACKET for the function that adds the Action Listener to the button
+		
+	}
+	//SELECT one of the following method
+	public void select() {
+		area.append("Chatbot: Sure!"+"\n");
+	}
+	//The REPLY METHOD
+	public void reply(String input) {area.append("Chatbot: " + input + "\n");}
+	
+	//Email address
+	public void email() {
+		reply("Sounds good, please input your e-mail address.");
+	}
+}
+
+public class assignment2  {
+	
+
+
+	public static void main (String[] args) {
+		new Bot();
+	}
+	
+
+	
+}
