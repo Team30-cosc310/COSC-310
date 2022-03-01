@@ -3,7 +3,7 @@ For COSC 310 assignments
 This code is a conversation between a user and a chat bot to discuss problems 
 It is comprised of 7 classes:
 
---> The first class is the device class, it is responsible for creating the list of keywords necessary for our program to return a corresponding response. It also creates the list     of prepared responses.
+--> The first class is the device class, it is responsible for creating the list of keywords necessary for our program to return a corresponding response. It also creates the list       of prepared responses.
 
 --> The second class is the GUI class, it is responsible for developing the user interface for our chat bot. (all the visual stuff)
 
