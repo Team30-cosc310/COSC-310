@@ -15,4 +15,4 @@ It is comprised of 7 classes:
 
 --> The 6th class is called the Test class and used for testing our code's functionality. 
 
---> The 7th class is caleed the logger class and it is reponible for recording the entire conversation between the user and bot. 
+--> The 7th class is called the logger class and it is reponible for recording the entire conversation between the user and bot. 
