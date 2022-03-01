@@ -9,7 +9,7 @@ It is comprised of 7 classes:
 
 --> The 3rd class is the survey class, it is responsible for providing the closing survey for users to fill out. It will also save the results of the survey to a text file.
 
---> The 4th class is the main class and simply responible for creating a new GUI 
+--> The 4th class is the main class and simply responible for creating a new GUI object
 
 --> The 5th class is called the solution class. It is responsible for searching the device class, with the user-entered keyword, and finding a solution.
 
