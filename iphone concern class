@@ -1,0 +1,86 @@
+package trial;
+import trial.Main;
+import java.util.Scanner
+
+public class iphone {
+
+    public static String Concern;
+    public static String response;
+
+
+
+    public String iphone(String placeholder) {
+
+        //   Scanner scanner = new Scanner(System.in); {MIGHT NEED THIS IDK DEPENDING ON FUNCTIONALITY}
+        //   System.out.println("What is your concern?: ");
+        Concern = placeholder;
+
+        if (Concern.equals("my phone is dead")) {
+            System.out.println("plug it in");
+            response = "plug it in";
+        }
+        if (Concern.equals("can't hear my ringtone" || "cannot hear my ringtone")) {
+            System.out.println("turn on ringer");
+            response = "turn on ringer";
+        }
+        if (Concern.equals("dies quickly")) {
+            System.out.println("get a new phone");
+            response = "get a new phone";
+        }
+        if (Concern.equals("slow")) {
+            System.out.println("close some apps");
+            response = "close some apps";
+        }
+        if (Concern.equals("bluetooth")) {
+            System.out.println("make sure the device you wish to pair with is in pairing mode, then check your settings");
+            response = "make sure the device you wish to pair with is in pairing mode, then check your settings";
+        }
+        if (Concern.equals("icloud" || "ICLOUD")) {
+            System.out.println("you need to access settings and pay for more icloud storage");
+            response = "you need to acccess settings and pay for more icloud storage";
+        }
+        if (Concern.equals("touch screen stopped working")) {
+            System.out.println("touch it softer");
+            response = "touch it softer";
+        }
+        if (Concern.equals("web" || "google" || "search")) {
+            System.out.println("tap the safari icon");
+            response = "tap the safari icon";
+        }
+        if (Concern.equals("wifi")) {
+            System.out.println("go to your home router, then settings and select the given name and then enter the password");
+            response = "go to your home router, then settings and select the given name and then enter the password";
+        }
+        if (Concern.equals("cellular" || "data" || "coverage" || "SIM" || "sim")) {
+            System.out.println("For more information on your cell phone provider, please contact them!!");
+            response = "For more information on your cell phone provider, please contact them!!";
+        }
+        if (Concern.equals("planning" || "plan" || "calendar" || "routine" )) {
+            System.out.println("use the calendar tool that comes with your model");
+            response = "use the calendar tool that comes with your model";
+        }
+        
+         if (Concern.equals("payment" || "pay" || "wallet" || "card")) {
+            System.out.println("use the calendar tool that comes with your model");
+            response = "use the calendar tool that comes with your model";
+            }
+         
+         if (Concern.equals(language)) {
+            System.out.println("go to settings, under accesibility, then select your preferred language");
+            response = "go to settings, under accesibility, then select your preferred language";
+            }   
+            
+         if (Concern.equals("scratch" || "dent" || "damage" || "protector" || "broken") {
+            System.out.println("take to shop, be more careful");
+            response = "take to shop, be more carful";
+            }
+         if (Concern.equals("volume") {
+            System.out.println("side button adjusts volume up or down");
+            response = "side button adjusts volume up or down";
+            }
+         
+        
+            return response;
+    }
+    }
+
