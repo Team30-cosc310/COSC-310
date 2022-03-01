@@ -1,5 +1,5 @@
 # COSC-310
-For COSC 310 assignments 
+For COSC 310 assignment #2,  
 This code is a conversation between a user and a chat bot to discuss problems 
 It is comprised of 7 classes:
 
