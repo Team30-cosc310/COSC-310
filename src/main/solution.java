@@ -34,7 +34,7 @@ public class solution {
         }
 
         if (keyword.equals("not found")) {//match keyword to its list and find solution that acompanies key vale
-            return ("I couldn't understand that please try and rephrase your problem");
+            return (" rephrase your problem I couldn't understand that ");
         }
         for (int i = 0; i < d1.master.size(); i++) {
             for (int j = 0; j < d1.master.get(i).size(); j++) {

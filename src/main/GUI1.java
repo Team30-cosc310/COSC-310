@@ -90,7 +90,7 @@ class GUI1 extends JFrame{
                    //control the survey questions after user has asked to exit
                     if(ex){
 
-                        area.append("ChatBot: you should "+survey.SurveyQuestions.get(excount)+"\n");//ask survey question
+                        area.append("ChatBot: "+survey.SurveyQuestions.get(excount)+"\n");//ask survey question
 
                         System.out.println(excount);
                         System.out.println(survey.SurveyQuestions.size());
@@ -125,7 +125,7 @@ class GUI1 extends JFrame{
     //SELECT-one-of-the-following method
 
     //The REPLY METHOD
-    public void reply(String input) {area.append("Chatbot: " + input + "\n");}
+    public void reply(String input) {area.append("Chatbot: you should try to " + input + "\n");}
 
 
 
