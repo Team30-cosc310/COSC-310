@@ -1,12 +1,8 @@
-import java.util.Date;
+package main;
 
 public class main {
 
-    public static void main(String[] args)  {
-        java.util.Date date = new Date();
-        String filename ="SURV_"+date+".txt";
-        System.out.println(filename.replace(" ","_"));
-
-   survey survey1 = new survey();
+    public static void main(String[] args) {
+        GUI1 gui = new GUI1();//create a new instance of the graphical user interface
     }
 }
