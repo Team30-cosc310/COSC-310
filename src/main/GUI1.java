@@ -71,9 +71,11 @@ class GUI1 extends JFrame{
         button.add(label); //Assigning the Label to the Bottom
 
         //opening statement
-        area.append("Hello! I am Team 30's Virtual Product Assistant"+"\n" +
-                "in order to exit the program enter exit or done\n"+
-                "Chatbot: How can I help you today?\n");
+        area.append("Hello! I am Team 30's Virtual Product Assistant!!\n" +
+                "                             TO EXIT PRROGRAM: Type 'exit' or 'done'\n"+
+                "Chatbot : How can I help you today? Please select one of the following two options:\n"+
+                "                             -Android Restoration\n"+
+                "                             -iPhone Restoration\n");
 
         //Adding Action Listener for the Button
         button.addActionListener((ActionListener) new ActionListener(){
@@ -113,7 +115,7 @@ class GUI1 extends JFrame{
                     }
 
                     else
-                    reply(ans+".\n Chatbot:What else can I help you with");
+                    reply(ans+".\n Chatbot: What else can I help you with");
 
                 }
 
@@ -125,9 +127,8 @@ class GUI1 extends JFrame{
     //SELECT-one-of-the-following method
 
     //The REPLY METHOD
-    public void reply(String input) {area.append("Chatbot: you should try to " + input + "\n");}
+    public void reply(String input) {area.append("Chatbot: You should try to " + input + "\n");}
 
-
-
+  
 
 }

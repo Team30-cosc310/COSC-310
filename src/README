@@ -1,0 +1,8 @@
+each class holds individual responsibilities for its part of the code.
+
+Main: starts the program
+GUI : interacts with user and calls on methods and classes as needed
+Device: holds information on keywords and solutions to questions that may be asked
+solution: sorts through user inputs to connect keywords to solutions
+Survey: Holds survey questions and writes to a txt file
+test: used to validate inputs

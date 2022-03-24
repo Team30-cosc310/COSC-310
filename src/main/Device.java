@@ -62,7 +62,9 @@ public class Device {
         P16.add("protector");
         P16.add("broken");
         List<String> P17 = new ArrayList<>();
+        P17.add("iphone restoration");
         List<String> P18 = new ArrayList<>();
+        P18.add("android restoration");
         List<String> P19 = new ArrayList<>();
         List<String> P20 = new ArrayList<>();
         List<String> P21 = new ArrayList<>();
@@ -96,8 +98,12 @@ public class Device {
         String S14 = "go to setting > accessibility > preferred > language";
         String S15 = "use the side button to adjust volume up or down";
         String S16 = "take to the shop and be more careful";
-        String S17 = "abc";
-        String S18 = "abc";
+        String S17 = "You Selected 'iPhone Restoration'.\n "
+        		+ "                             If this is correct, please describe the issue(s) you are having:\n "
+        		+ "                             (i.e., power, data, damage, etc..)";
+        String S18 = "You Selected 'Android Restoration'.\n "
+        		+ "                             If this is correct, please describe the issue(s) you are having:\n"
+        		+ "                             (i.e., power, data, damage, etc..)\"";
         String S19 = "abc";
         String S20 = "abc";
         String S21 = "abc";
